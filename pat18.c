@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,n,p=1;
+
+    printf("\n ENTER N::");
+    scanf("%d",&n);
+
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=p;j++)
+        {
+            if(j%2==0)
+            printf("*");
+            else
+            printf("%d",i);
+        }
+        p=p+2;
+        printf("\n");
+    }
+    p=p-2;
+    for(i=n;i>=1;i--)
+    {
+        for(j=1;j<=p;j++)
+        {
+            if(j%2==0)
+            printf("*");
+            else
+            printf("%d",i);
+        }
+        p=p-2;
+        printf("\n");
+    }
+
+    return 0;
+}
